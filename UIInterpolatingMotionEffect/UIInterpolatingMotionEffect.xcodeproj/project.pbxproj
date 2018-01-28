@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD42E43A201D4F3800FBE64A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42E439201D4F3800FBE64A /* AppDelegate.swift */; };
-		BD42E43C201D4F3800FBE64A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42E43B201D4F3800FBE64A /* ViewController.swift */; };
+		BD42E43C201D4F3800FBE64A /* InterpolatingMotionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42E43B201D4F3800FBE64A /* InterpolatingMotionEffect.swift */; };
 		BD42E43F201D4F3800FBE64A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD42E43D201D4F3800FBE64A /* Main.storyboard */; };
 		BD42E441201D4F3800FBE64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD42E440201D4F3800FBE64A /* Assets.xcassets */; };
 		BD42E444201D4F3800FBE64A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD42E442201D4F3800FBE64A /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		BD42E436201D4F3800FBE64A /* UIInterpolatingMotionEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIInterpolatingMotionEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD42E439201D4F3800FBE64A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD42E43B201D4F3800FBE64A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD42E43B201D4F3800FBE64A /* InterpolatingMotionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatingMotionEffect.swift; sourceTree = "<group>"; };
 		BD42E43E201D4F3800FBE64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD42E440201D4F3800FBE64A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD42E443201D4F3800FBE64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				BD42E439201D4F3800FBE64A /* AppDelegate.swift */,
-				BD42E43B201D4F3800FBE64A /* ViewController.swift */,
+				BD42E43B201D4F3800FBE64A /* InterpolatingMotionEffect.swift */,
 				BD42E44B201D50D000FBE64A /* UIView+Extension.swift */,
 				BD42E43D201D4F3800FBE64A /* Main.storyboard */,
 				BD42E440201D4F3800FBE64A /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD42E44C201D50D000FBE64A /* UIView+Extension.swift in Sources */,
-				BD42E43C201D4F3800FBE64A /* ViewController.swift in Sources */,
+				BD42E43C201D4F3800FBE64A /* InterpolatingMotionEffect.swift in Sources */,
 				BD42E43A201D4F3800FBE64A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

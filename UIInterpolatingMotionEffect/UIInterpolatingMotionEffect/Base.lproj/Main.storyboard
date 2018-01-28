@@ -11,32 +11,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Interpolating Motion Effect-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIInterpolatingMotionEffect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InterpolatingMotionEffect" customModule="UIInterpolatingMotionEffect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnionSquare" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-Oq-Ult">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8e-8i-qnW" userLabel="Image View">
                                 <rect key="frame" x="8" y="153.5" width="359" height="359"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnionSquare" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-Oq-Ult">
+                                        <rect key="frame" x="-20" y="-20" width="399" height="399"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ETj-Oq-Ult" secondAttribute="height" multiplier="1:1" id="PTs-6A-zcH"/>
+                                    <constraint firstItem="ETj-Oq-Ult" firstAttribute="top" secondItem="F8e-8i-qnW" secondAttribute="top" constant="-20" id="AGu-yE-qXe"/>
+                                    <constraint firstAttribute="width" secondItem="F8e-8i-qnW" secondAttribute="height" multiplier="1:1" id="AMu-Kb-2cj"/>
+                                    <constraint firstAttribute="trailing" secondItem="ETj-Oq-Ult" secondAttribute="trailing" constant="-20" id="YrR-hu-hIc"/>
+                                    <constraint firstItem="ETj-Oq-Ult" firstAttribute="leading" secondItem="F8e-8i-qnW" secondAttribute="leading" constant="-20" id="qOe-uz-W6B"/>
+                                    <constraint firstAttribute="bottom" secondItem="ETj-Oq-Ult" secondAttribute="bottom" constant="-20" id="zXs-1e-kNj"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ETj-Oq-Ult" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Guy-2e-4lA"/>
-                            <constraint firstAttribute="trailing" secondItem="ETj-Oq-Ult" secondAttribute="trailing" constant="8" id="WtG-Ho-KGc"/>
-                            <constraint firstItem="ETj-Oq-Ult" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrn-Vs-gJm"/>
-                            <constraint firstItem="ETj-Oq-Ult" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xKP-cn-Iux"/>
+                            <constraint firstItem="F8e-8i-qnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXc-JV-rMt"/>
+                            <constraint firstItem="F8e-8i-qnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="MC7-oe-vcK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F8e-8i-qnW" secondAttribute="trailing" constant="8" id="a2X-px-SXX"/>
+                            <constraint firstItem="F8e-8i-qnW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hWp-LE-Icg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="exampleView" destination="ETj-Oq-Ult" id="Bjj-wh-QB9"/>
+                        <outlet property="exampleView" destination="ETj-Oq-Ult" id="AAC-Or-FCS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
